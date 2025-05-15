@@ -137,6 +137,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+
   background-color: var(--bg-color);
   width: 100%;
   height: 90px;
@@ -157,6 +158,13 @@ header {
   display: flex;
   gap: 56px;
 }
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
 a {
   color: var(--text-color);
 }
@@ -167,13 +175,13 @@ a {
   font-size: 18px;
 }
 /* Responsive */
-@media (max-width: 780px) {
-  nav {
+@media (max-width: 800px) {
+  .main-nav {
     display: none;
     padding: 0 10%;
   }
 }
-@media (min-width: 779px) {
+@media (min-width: 801px) {
   .burger-menu {
     display: none;
   }
